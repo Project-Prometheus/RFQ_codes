@@ -1,0 +1,9 @@
+# -------------------------- For MacOS ---------------------------------
+# -I/opt/local/include/ : for the gsl, gnu scienfic library include files
+# -L/opt/local/lib/     : for the gsl, gnu scienfic library lib files
+
+g++ tou2lid2tou.cpp -o Tou2Lid2Tou -I/opt/local/include/ -L/opt/local/lib/ -lgsl -lm > tou2lid2tou_compil.log
+
+# -------------------------- For Linux ---------------------------------
+# g++ -Wall -I/usr/include -L/usr/lib/ -c tou2lid2tou.cpp
+# g++ -static tou2lid2tou.o -lgsl -lgslcblas -lm -o Tou2Lid2Tou
